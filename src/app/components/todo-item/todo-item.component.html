@@ -1,3 +1,7 @@
-<p>
-  todo-item works!
-</p>
+<div [ngClass]="setClasses()">
+  <p>
+    <input type="checkbox" (change)="onToggle()">
+    {{ todo.title }}
+    <button (click)="onDelete()" class="del">x</button>
+  </p>
+</div>
